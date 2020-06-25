@@ -1,0 +1,10 @@
+body {
+    background-color: #5c2d36;
+}
+
+label {
+    color: white
+}
+canvas{
+    float: left;
+}

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>myProject</title>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/graph3D/entities/Point.js"></script>
+        <script src="js/graph3D/entities/Edge.js"></script>
+        <script src="js/graph3D/entities/Polygon.js"></script>
+        <script src="js/graph3D/entities/Subject.js"></script>
+        <script src="js/graph3D/entities/Light.js"></script>
+
+        <script src="js/graph3D/Surfaces/Surfaces.js"></script>
+        <script src="js/graph3D/Surfaces/cube.js"></script>
+        <script src="js/graph3D/Surfaces/bublik.js"></script>
+        <script src="js/graph3D/Surfaces/sphera.js"></script>
+        <script src="js/graph3D/Surfaces/saturn.js"></script>
+        <script src="js/graph3D/Surfaces/hyperbParaboloid.js"></script>
+        <script src="js/graph3D/Surfaces/ellipticalParaboloid.js"></script>
+        <script src="js/graph3D/Surfaces/oneHyperboloid.js"></script>
+        <script src="js/graph3D/Surfaces/doubleHyperboloid.js"></script>
+        <script src="js/graph3D/Surfaces/ellipsoid.js"></script>
+        <script src="js/graph3D/Surfaces/conus.js"></script>
+        <script src="js/graph3D/Surfaces/ellipticCylinder.js"></script>
+        <script src="js/graph3D/Surfaces/cilinder.js"></script>
+        <script src="js/graph3D/Surfaces/hyperbCylinder.js"></script>
+        <script src="js/graph3D/Surfaces/parabCylinder.js"></script>
+
+        <script src="js/graph3D/Math3D.js"></script>
+        <script src="js/graph3D/Graph3D.js"></script>
+        <script src="js/graph/Canvas.js"></script>
+        <script src="js/UI/UI.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div>
+            <label> <input id="printPoints" type="checkbox">Рисовать точки </label><br>
+            <label> <input id="printEdges" type="checkbox">Рисовать грани </label><br>
+            <label> <input id="printPolygons" type="checkbox" >Рисовать полигоны </label><br>
+            
+         </div>
+         <div class="subjects">
+            <select class="allSubjects" id="allSubjects">
+                <option value="nothing">Нарисовать бы... </option>
+                <option value="cube">куб</option>
+                <option value="cilinder">цилиндр</option>
+                <option value="bublik">бублик</option>
+                <option value="conus">конус</option>
+                <option value="sphera">сферу</option>
+                <option value="ellipsoid">эллипсоид</option>
+                <option value="hyperCylinder">гиперболический цилиндр</option>
+                <option value="parabCylinder">параболический цилиндр</option>
+                <option value="ellipCylinder">эллиптический цилиндр (23 вариант. Раскрасить полигоны сеткой)</option>
+                <option value="oneHyperbolid">однополостный гиперболоид</option>
+                <option value="doubleHyperbolid">двухполостный гиперболоид</option>
+                <option value="ellipsParaboloid">эллиптический параболоид</option>
+                <option value="hyperbolicParaboloid">гиперболический параболоид</option>
+                <option value="sunSystem">солнечную систему! </option>
+            </select>
+            </div>
+        <br><br>
+        <div> 
+            <canvas id="canvas"></canvas>
+        </div>
+    </body>
+</html>
